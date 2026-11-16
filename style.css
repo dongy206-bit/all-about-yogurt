@@ -1,0 +1,481 @@
+:root {
+  --brown: #5B3A1E;
+  --dark-brown: #4A2F17;
+  --pink: #D98FA6;
+  --light-pink: #E3A5B8;
+  --cream: #FBEACB;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  font-family: "Rubik", sans-serif;
+  padding: 16px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 8px 12px 16px;
+}
+
+.hero {
+  min-height: 90vh;
+  border-radius: 28px;
+  background: repeating-linear-gradient(90deg, var(--brown) 0px 40px, var(--dark-brown) 40px 80px);
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: min(16vw, 30vh);
+}
+
+h1 {
+  font-family: "Bagel Fat One", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 0.85;
+}
+
+.line1,
+.line2 {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  text-shadow: 0.03em 0.03em 0 var(--dark-brown);
+}
+
+.line1 {
+  color: var(--pink);
+}
+
+.line2 {
+  color: var(--cream);
+  padding-left: 0.35em;
+}
+
+.now-serving {
+  position: absolute;
+  top: -0.32em;
+  left: 0.1em;
+  font-family: "Yellowtail", cursive;
+  font-size: 0.24em;
+  color: var(--pink);
+  text-shadow: none;
+  transform: rotate(-8deg);
+}
+
+.cup-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.62em;
+  height: 0.62em;
+  margin-left: 0.06em;
+  border-radius: 50%;
+  background-color: var(--pink);
+  border: 0.025em solid var(--dark-brown);
+}
+
+.cup-circle img {
+  width: 60%;
+}
+
+.burst {
+  position: absolute;
+  left: -0.12em;
+  top: 0.1em;
+  width: 4.1em;
+  height: 4.1em;
+  font-size: 0.15em;  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink);
+  color: var(--dark-brown);
+  font-family: "Yellowtail", cursive;
+  line-height: 1;
+  text-shadow: none;
+  clip-path: polygon(50% 0%, 61% 15%, 79% 9%, 79% 28%, 98% 32%, 88% 48%, 100% 62%, 82% 70%, 85% 89%, 66% 85%, 55% 100%, 44% 86%, 26% 93%, 23% 74%, 4% 70%, 13% 54%, 1% 39%, 19% 31%, 18% 12%, 37% 16%);
+}
+
+.pill {
+  position: absolute;
+  right: -0.12em;
+  bottom: -0.58em;
+  font-family: "Yellowtail", cursive;
+  font-size: 0.14em;
+  line-height: 1.2;
+  text-shadow: none;
+  background-color: var(--pink);
+  color: var(--dark-brown);
+  border: 0.12em solid var(--dark-brown);
+  border-radius: 50px;
+  padding: 0.15em 0.9em;
+  transform: rotate(-4deg);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 70px;
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 26px;
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  border: 5px solid var(--dark-brown);
+  border-radius: 50px;
+  padding: 12px 36px;
+  box-shadow: 6px 6px 0 var(--pink);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: rotate(-2deg);
+  box-shadow: 10px 10px 0 var(--pink);
+}
+
+.small-note {
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+.info {
+  display: flex;
+  margin-top: 16px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.info-left,
+.info-right {
+  width: 50%;
+  padding: 50px 30px;
+}
+
+.info-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign {
+  width: 320px;
+  background-color: var(--brown);
+  border: 14px solid #C9955C;
+  border-radius: 40px 40px 6px 6px;
+  padding: 26px 22px;
+  color: var(--pink);
+  transform: rotate(-3deg);
+}
+
+.sign-title {
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 44px;
+  line-height: 1;
+}
+
+.sign-text {
+  color: var(--cream);
+  font-weight: bold;
+  font-size: 14px;
+  margin: 18px 0 10px;
+}
+
+.sign-big {
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.info-right {
+  background: repeating-linear-gradient(90deg, var(--pink) 0px 34px, var(--light-pink) 34px 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-box {
+  background-color: var(--cream);
+  border: 3px solid var(--dark-brown);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.logo-box {
+  text-align: center;
+  padding-top: 14px;
+}
+
+.tiny {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.big-logo {
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 130px;
+  line-height: 0.75;
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.facts {
+  padding: 22px 26px;
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.facts span {
+  color: var(--pink);
+}
+
+.brands {
+  display: none;  margin-top: 16px;
+  border-radius: 28px;
+  padding: 60px 40px;
+  background: repeating-linear-gradient(90deg, var(--brown) 0px 40px, var(--dark-brown) 40px 80px);
+  color: var(--cream);
+  text-align: center;
+}
+
+.brands:target,
+.brands:has(.popup:target) {
+  display: block;
+}
+
+.script-title {
+  font-family: "Yellowtail", cursive;
+  font-size: 48px;
+  color: var(--pink);
+}
+
+h2 {
+  font-family: "Bagel Fat One", sans-serif;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 0.85;
+  margin-bottom: 16px;
+}
+
+.filters {
+  margin: 30px 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.filters label {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--cream);
+  border: 2px solid var(--cream);
+  border-radius: 50px;
+  padding: 8px 18px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.filters label:hover {
+  background-color: var(--pink);
+  border-color: var(--pink);
+  color: var(--dark-brown);
+}
+
+#f-all:checked ~ .filters label[for="f-all"],
+#f-greek:checked ~ .filters label[for="f-greek"],
+#f-icelandic:checked ~ .filters label[for="f-icelandic"] {
+  background-color: var(--pink);
+  border-color: var(--pink);
+  color: var(--dark-brown);
+}
+
+#f-greek:checked ~ .grid .cup:not(.greek),
+#f-icelandic:checked ~ .grid .cup:not(.icelandic) {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 22px;
+}
+
+.cup {
+  display: block;
+  text-decoration: none;
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  border: 4px solid var(--dark-brown);
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: 6px 6px 0 var(--pink);
+  cursor: pointer;
+}
+
+.cup:hover {
+  transform: rotate(-3deg) scale(1.04);
+}
+
+.cup img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--pink);
+}
+
+.cup h3 {
+  font-family: "Bagel Fat One", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 8px;
+  background-color: var(--pink);
+  border-radius: 50px;
+  padding: 3px 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 35, 15, 0.7);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.popup:target {
+  display: flex;
+}
+
+.popup-box {
+  color: var(--dark-brown);
+  text-align: left;
+  position: relative;
+  display: flex;
+  width: 760px;
+  max-width: 100%;
+  background-color: var(--cream);
+  border: 5px solid var(--dark-brown);
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.popup-box img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.popup-text {
+  width: 60%;
+  padding: 30px;
+}
+
+.popup-text h3 {
+  font-family: "Bagel Fat One", sans-serif;
+  font-weight: normal;
+  font-size: 46px;
+}
+
+.compare {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.says,
+.made {
+  width: 50%;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.says {
+  background-color: var(--pink);
+}
+
+.made {
+  background-color: var(--brown);
+  color: var(--cream);
+}
+
+.big {
+  font-family: "Bagel Fat One", sans-serif;
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+.x {
+  text-decoration: none;
+  color: var(--dark-brown);
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 34px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .topbar span:nth-child(2) {
+    display: none;
+  }
+  .logo {
+    font-size: 21vw;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info-left,
+  .info-right {
+    width: 100%;
+  }
+  h2 {
+    font-size: 64px;
+  }
+  .popup-box {
+    flex-direction: column;
+  }
+  .popup-box img,
+  .popup-text {
+    width: 100%;
+  }
+  .popup-box img {
+    height: 220px;
+  }
+}

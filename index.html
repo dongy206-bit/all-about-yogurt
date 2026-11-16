@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everywhere-Style Yogurt</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Rubik:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <span>EVERYWHERE YOGURT CO.</span>
+    <span>everything you need to know about yogurt</span>
+    <span>@2026</span>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="logo">
+      <h1>
+        <span class="line1">
+          <span class="now-serving">Now Serving!</span>
+          EVERY<span class="cup-circle">
+            <img src="images/cup-icon.svg" alt="">
+          </span>
+        </span>
+        <span class="line2">
+          <span class="burst">Every<br>Style!</span>
+          WHERE
+          <span class="pill">Style Yogurt</span>
+        </span>
+      </h1>
+    </div>
+
+    <button class="btn">Peel the lid ↓</button>
+    <p class="small-note">*Greek. Icelandic. Aussie. French. Bulgarian. Made in the U.S.A.</p>
+  </section>
+
+  <section class="info">
+    <div class="info-left">
+      <div class="sign">
+        <p class="sign-title">Stay<br>For The<br>Culture!</p>
+        <p class="sign-text">Every country on the label.<br>One country in the cup.</p>
+        <p class="sign-big">6 PLACES<br>1 U.S.A.</p>
+      </div>
+    </div>
+
+    <div class="info-right">
+      <div class="card-box logo-box">
+        <p class="tiny">EVERYWHERE YOGURT CO.</p>
+        <p class="big-logo">EVRY</p>
+      </div>
+      <div class="card-box facts">
+        <p><span>Origin:</span> Everywhere-ish</p>
+        <p><span>Style:</span> Greek, Icelandic, Aussie, French</p>
+        <p><span>Ingredients:</span> Milk, cultures, a passport</p>
+        <p><span>Made in:</span> Read the back of the cup*</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands" id="brands">
+    <p class="script-title">What's Inside?</p>
+    <h2>THE OTHER<br>17 CUPS</h2>
+    <p>Click a cup to see what the label says and where it is made.</p>
+
+    <input type="radio" name="filter" id="f-all" checked>
+    <input type="radio" name="filter" id="f-greek">
+    <input type="radio" name="filter" id="f-icelandic">
+
+    <div class="filters">
+      <label for="f-all">All</label>
+      <label for="f-greek">Greek</label>
+      <label for="f-icelandic">Icelandic</label>
+    </div>
+
+    <div class="grid">
+        <a href="#chobani" class="cup greek">
+          <img src="images/cup-chobani.jpg" alt="Chobani">
+          <h3>Chobani</h3>
+          <p class="tag">Greek</p>
+        </a>
+        <a href="#fage" class="cup greek">
+          <img src="images/cup-fage.jpg" alt="Fage">
+          <h3>Fage</h3>
+          <p class="tag">Greek</p>
+        </a>
+        <a href="#oikos" class="cup greek">
+          <img src="images/cup-oikos.jpg" alt="Oikos">
+          <h3>Oikos</h3>
+          <p class="tag">Greek</p>
+        </a>
+        <a href="#ellenos" class="cup greek">
+          <img src="images/cup-ellenos.jpg" alt="Ellenos">
+          <h3>Ellenos</h3>
+          <p class="tag">Greek</p>
+        </a>
+        <a href="#sourmilk" class="cup greek">
+          <img src="images/cup-sourmilk.jpg" alt="Sourmilk">
+          <h3>Sourmilk</h3>
+          <p class="tag">Greek</p>
+        </a>
+        <a href="#siggis" class="cup icelandic">
+          <img src="images/cup-siggis.jpg" alt="Siggi's">
+          <h3>Siggi's</h3>
+          <p class="tag">Icelandic</p>
+        </a>
+    </div>
+
+    <a href="#top" class="btn">Put the lid back on ↑</a>
+
+    <div class="popup" id="chobani">
+      <div class="popup-box">
+        <a href="#brands" class="x"></a>
+        <img src="images/cup-chobani.jpg" alt="Chobani">
+        <div class="popup-text">
+          <h3>Chobani</h3>
+          <div class="compare">
+            <div class="says"><p class="tiny">THE LABEL SAYS</p><p class="big">Greek</p></div>
+            <div class="made"><p class="tiny">MADE IN</p><p class="big">New York</p></div>
+          </div>
+          <p>Greek yogurt on the label, made in New York State.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="fage">
+      <div class="popup-box">
+        <a href="#brands" class="x"></a>
+        <img src="images/cup-fage.jpg" alt="Fage">
+        <div class="popup-text">
+          <h3>Fage</h3>
+          <div class="compare">
+            <div class="says"><p class="tiny">THE LABEL SAYS</p><p class="big">Greek</p></div>
+            <div class="made"><p class="tiny">MADE IN</p><p class="big">New York</p></div>
+          </div>
+          <p>A Greek company, but the U.S. cups come from a plant in New York State.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="oikos">
+      <div class="popup-box">
+        <a href="#brands" class="x"></a>
+        <img src="images/cup-oikos.jpg" alt="Oikos">
+        <div class="popup-text">
+          <h3>Oikos</h3>
+          <div class="compare">
+            <div class="says"><p class="tiny">THE LABEL SAYS</p><p class="big">Greek</p></div>
+            <div class="made"><p class="tiny">MADE IN</p><p class="big">U.S.</p></div>
+          </div>
+          <p>Oikos is Greek for house. It is made in the U.S. by Danone.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="ellenos">
+      <div class="popup-box">
+        <a href="#brands" class="x"></a>
+        <img src="images/cup-ellenos.jpg" alt="Ellenos">
+        <div class="popup-text">
+          <h3>Ellenos</h3>
+          <div class="compare">
+            <div class="says"><p class="tiny">THE LABEL SAYS</p><p class="big">Greek</p></div>
+            <div class="made"><p class="tiny">MADE IN</p><p class="big">Washington</p></div>
+          </div>
+          <p>Greek-style yogurt made in Seattle.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="sourmilk">
+      <div class="popup-box">
+        <a href="#brands" class="x"></a>
+        <img src="images/cup-sourmilk.jpg" alt="Sourmilk">
+        <div class="popup-text">
+          <h3>Sourmilk</h3>
+          <div class="compare">
+            <div class="says"><p class="tiny">THE LABEL SAYS</p><p class="big">Greek</p></div>
+            <div class="made"><p class="tiny">MADE IN</p><p class="big">New York</p></div>
+          </div>
+          <p>Greek-style yogurt made in New York State.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="siggis">
+      <div class="popup-box">
+        <a href="#brands" class="x"></a>
+        <img src="images/cup-siggis.jpg" alt="Siggi's">
+        <div class="popup-text">
+          <h3>Siggi's</h3>
+          <div class="compare">
+            <div class="says"><p class="tiny">THE LABEL SAYS</p><p class="big">Icelandic</p></div>
+            <div class="made"><p class="tiny">MADE IN</p><p class="big">New York</p></div>
+          </div>
+          <p>Icelandic skyr on the label, made in New York State.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
